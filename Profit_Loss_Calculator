@@ -1,0 +1,20 @@
+print("Welcome To Profit-Loss Calculator")
+
+# Taking Input From User
+CostP = int(input("Cost Price (CP) : "))
+OH = int(input("Overhead : "))
+SP = int(input("Selling Price (SP) : "))
+CP = int(CostP+OH)
+
+if CP>SP:
+    Loss = int(CP-SP)
+    print("You get the loss of : ", Loss)
+
+if SP>CP:
+    Profit = int(SP-CP)
+    print("You get the profit of : ", Profit)
+
+if SP==CP:
+    print("You did not get any loss or profit.")
+
+print("Thank You")
